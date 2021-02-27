@@ -1,0 +1,72 @@
+
+.alert .wrapper {
+	background-color: #272838;
+	padding: 25px 10% 25px 10%;
+
+}
+
+
+.alert .wrapper h2, .alert .wrapper p {
+	margin: 0;
+	width: 100%;
+	text-align: center;
+	font-family: monospace;
+}
+
+.alert .closeBtn em {
+	height: 50px;
+	width: 50px;
+	margin-top: 20px;
+
+}
+
+.alert .closeBtn em p {
+	text-indent: -90000px;
+	position: absolute;
+
+}
+
+.alert .wrapper h2 {
+	padding-bottom: 13px; 	
+	font-size: 2.25em;
+
+}
+.alert .wrapper p {
+	padding-bottom: 13px; 	
+	font-size: 1.5em;
+
+}
+
+.alert .closeBtn {
+	position: absolute;
+	right: 0;
+	top: 0;
+	margin: 15px 10% 25px 10%;
+	transition: .5s ease-in-out;
+	height: 50px;
+	width: 50px;
+	border-radius: 6px;
+	border: 2px transparent;
+}
+
+.alert .closeBtn:hover {
+	background:rgba(0,0,0,0.5);
+	cursor: pointer;
+}
+
+
+
+.alert .closeBtn em:after {
+	font-family: "Font Awesome 5 Free";
+	content: "\f057";
+	display: inline-block;
+	vertical-align: middle;
+	font-weight: 500;
+	font-style: normal;
+	font-size: 30px;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+
+
+}

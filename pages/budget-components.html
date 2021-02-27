@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	<link rel="stylesheet" type="text/css" href="../css/nav.css">
+	<link rel="stylesheet" type="text/css" href="../css/alert.css">
+	<link rel="stylesheet" type="text/css" href="../css/image-background.css">
+	<link rel="stylesheet" type="text/css" href="../css/image-slider.css">
+	<link rel="stylesheet" type="text/css" href="../css/expenses-component.css">
+	<link rel="stylesheet" type="text/css" href="../css/goals-component.css">
+	<link rel="stylesheet" type="text/css" href="../css/sign-in.css">
+
+	<link rel="stylesheet" type="text/css" href="../css/footer.css">
+
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap" rel="stylesheet">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://kit.fontawesome.com/a1117c77b3.js" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="../js/main.js"></script>
+
+	<!--Flickity-->
+	<link rel="stylesheet" type="text/css" media="screen" href="https://unpkg.com/flickity@2.2.2/dist/flickity.min.css">
+	<script type="text/javascript" src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+	
+
+	<title>Website Title Placeholder</title>
+
+</head>
+
+<body class="standard">
+	<header>
+
+		<!--BEGIN: NAVIGATION-->
+		<nav>
+
+			<input class="hiddenText" type="checkbox" id="navToggle"/>
+
+			<div class="navWrapper">
+
+				<div class="top">
+
+					<div class="logo">
+
+						<a class="logo" href="#">
+							<span class="hiddenText">Home</span>
+							knōsis 
+							<span style="font-weight: 400;">web</span>
+					  	</a>
+
+						<div class="subtitle">web development | seo | education</div>
+
+					</div>
+
+					<label class="menuBtn" for="navToggle">[Menu]</label>
+
+				</div>
+
+
+
+				<div class="bottom">
+
+					<div class="mainMenu">
+						<ul>
+							<li><a href="#">Get a Quote</a></li>
+							<li><a href="#">Education</a></li>
+							<li><a href="#">Our Portfolio</a></li>
+							<li><a href="#">Contact Us</a></li>
+						</ul>
+					</div>
+
+				</div>
+
+			</div>
+
+
+		</nav>	
+		<!--END: NAVIGATION-->
+	
+	</header>
+
+	<div class="content">
+
+		<!--BEGIN: IMAGE BACKGROUND COMPONENT-->
+		<div class="imageBackgroundComponent">
+			<div>
+
+			</div>
+		</div>
+		<!--END: IMAGE BACKGROUND COMPONENT-->
+
+	   <!--BEGIN: EXPENSES COMPONENT-->
+	   <div>
+			<div class="expensesComponent">
+				<div class="expensesSummary">
+					<h2>Expenses</h2>
+					<p>$2578.91</p>
+					<p>Budgeted towards 22 expenses</p>
+					<div>
+						<div>
+							<p><span>Outgoing:</span> $792.00 per paycheck</p>
+							<p><span>Payday:</span> March 5th</p>							
+						</div>
+						<div>
+							<ul>
+								<li><button class="squareIcon edit">Edit</button></li>
+								<li><button class="squareIcon sort">Sort Expenses</button></li>
+								<li><button class="squareIcon add">Add an Expense</button></li>
+							</ul>
+							
+						</div>
+					</div>
+				</div>
+				<div>
+					<ul class="expensesListview">
+						<li class="individualExpense listElement-carousel">
+							<button class="carousel-cell">
+								<div>
+									<h3>Emergency Fund</h3>
+									<p><span>$943.60</span> of $250.00</p>
+									<p>March 5th &bull; the 5th of every month</p>
+									<p><span>$250/Paycheck</span> &bull; <span style="color: #ef3f3a;">No automatic spending</span></p>
+
+								</div>
+								<div>
+									<div class="statusBar"><span style="background-color:#0d96ff; width: 100%;"></span></div>
+
+								</div>								
+							</button>
+							<button class="carousel-cell deleteButton">Delete</button>
+
+						</li>
+						<li class="individualExpense listElement-carousel">
+							<button class="carousel-cell">
+								<div>
+									<h3>Gas</h3>
+									<p><span>$50.00</span> of $100.00</p>
+									<p>March 5th &bull; the 5th of every month</p>
+									<p><span>$115/Paycheck</span> &bull; <span style="color: #ef3f3a;">No automatic spending</span></p>
+
+								</div>
+								<div>
+									<div class="statusBar"><span style="background-color:#0d96ff; width: 50%;"></span></div>
+
+								</div>
+							</button>
+							<button class="carousel-cell deleteButton">Delete</button>
+
+						</li>
+						<li class="individualExpense listElement-carousel">
+							<button class="carousel-cell">
+								<div>
+									<h3>Groceries</h3>
+									<p><span>$4.56</span> of $400.00</p>
+									<p>March 5th &bull; the 5th of every month</p>
+									<p><span>$400/Paycheck</span> &bull; <span style="">Lowes Foods</span></p>
+
+								</div>
+								<div>
+									<div class="statusBar"><span style="background-color:#0d96ff; width: 50%;"></span></div>
+
+								</div>
+							</button>
+							<button class="carousel-cell deleteButton">Delete</button>
+
+						</li>
+						<li class="individualExpense listElement-carousel">
+							<button class="carousel-cell">
+								<div>
+									<h3>Phone</h3>
+									<p><span>$20.30</span> of $35.00</p>
+									<p>March 5th &bull; the 5th of every month</p>
+									<p><span>$35/Paycheck</span> &bull; <span>Verizon</span></p>
+
+								</div>
+								<div>
+									<div class="statusBar"><span style="background-color:#0d96ff; width: 50%;"></span></div>
+
+								</div>
+							</button>
+							<button class="carousel-cell deleteButton">Delete</button>
+
+						</li>
+						<li class="individualExpense main-carousel listElement-carousel">
+							<button class="carousel-cell">
+								<div>
+									<h3>Car Insurance</h3>
+									<p><span>$50.30</span> of $101.00</p>
+									<p>March 5th &bull; the 5th of every month</p>
+									<p><span>$101/Paycheck</span> &bull; <span>Geico Insurance</span></p>
+
+								</div>
+								<div>
+									<div class="statusBar"><span style="background-color:#0d96ff; width: 50%;"></span></div>
+
+								</div>								
+							</button>
+							<button class="carousel-cell deleteButton">Delete</button>
+
+						</li>
+					</ul>
+				</div>
+
+			</div>		   
+	   </div>
+	   <!--END: EXPENSES COMPONENT-->
+
+	   <!--BEGIN: GOALS COMPONENT--> 
+	   <div>
+			<div class="goalsComponent">
+				<div class="goalsSummary">
+					<h2>Goals</h2>
+					<p>$943.60</p>
+					<p>Budgeted towards 2 goals</p>
+					<div>
+						<!-- <div>
+							<p><span>Outgoing:</span> $792.00 per paycheck</p>
+							<p><span>Payday:</span> March 5th</p>							
+						</div> -->
+						<div>
+							<ul>
+								<li><button class="squareIcon edit">Edit</button></li>
+								<li><button class="squareIcon sort">Sort Expenses</button></li>
+								<li><button class="squareIcon add">Add an Expense</button></li>
+							</ul>
+							
+						</div>
+					</div>
+				</div>
+				<div>
+					<ul class="goalsListview">
+						<li class="individualGoal listElement-carousel">
+							<button class="carousel-cell">
+								<div>
+									<h3>iPad Purchase</h3>
+								</div>
+								<div>
+									<div class="amountSaved" style="background-color:#0d96ff;">
+										<p>$943.60</p>
+									</div>
+
+								</div>								
+							</button>
+							<button class="carousel-cell deleteButton">Delete</button>
+						</li>
+						<li class="individualGoal listElement-carousel timeSensitive">
+							<button class="carousel-cell">
+								<div>
+									<h3>iPad Purchase</h3>
+									<!-- <p><span>$943.60</span> of $1200.00</p> -->
+									<div class="statusBar"><span style="background-color:#ffd1dc; width: 100%;"></span></div>
+									<p><span>$943.60</span> of <span>$2000.00</span> by June 14, 2016</p>
+
+								</div>
+								<div>
+									<div class="amountSaved" style="background-color:#ffd1dc;">
+										<p>$943.60</p>
+									</div>
+
+								</div>								
+							</button>
+							<button class="carousel-cell deleteButton">Delete</button>
+						</li>
+
+					</ul>
+				</div>
+
+			</div>		   
+   		</div>
+   		<!--END: GOALS COMPONENT-->
+
+	   <!--BEGIN: SIGN IN COMPONENT--> 
+	   <div>
+		<div class="signinComponent">
+			<div class="signinSummary">
+				<img src="https://via.placeholder.com/150X75" alt=""/>
+				<h2>Sign in to <br> your account</h2>
+				<p>Welcome back!</p>
+			</div>
+			<div>
+				<form action="/action_page.php">
+
+					<input type="text" id="email" name="email" placeholder="Username">
+					<div>
+						<input type="text" id="password" name="password" placeholder="Password">
+						<input type="submit" placeholder="Sign In">						
+					</div>
+				</form>
+				<div>
+					<a href="#">Reset Password</a>
+					<a href="#">Forgot Username</a>
+				</div> 
+			</div>
+			<div>
+				<p>Budgeting Software by Knosis Web, LLC.</p>
+			</div>
+
+		</div>		   
+	   </div>
+	   <!--END: SIGN IN COMPONENT-->
+	</div>
+
+	<footer>
+		<div class="footerWrapper">
+			<div>
+				<p>&copy; Knosis Web LLC 2021. All Rights Reserved. </p>
+
+			</div>
+			<div>
+
+				<ul>
+					<li><a href="#">Facebook</a></li>
+					<li><a href="#">YouTube</a></li>
+					<li><a href="#">Thumbtack Page</a></li>
+				</ul>
+
+			</div>
+
+		</div>
+	</footer>
+
+</body>
+
+</html>

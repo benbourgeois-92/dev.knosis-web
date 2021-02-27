@@ -1,0 +1,31 @@
+footer {
+    width: 100%;
+    display: block;
+
+}
+footer .footerWrapper div {
+    display: inline-block;
+}
+footer p, footer li a {
+    font-family: "Jura", sans-serif;
+    color: #f9f8f8;
+}
+footer .footerWrapper {
+    border-top: 1px solid #f9f8f8;
+    margin-left: 30px; 
+    margin-right: 30px;
+}
+
+a.logo {
+	font-family: "Modulus Pro";
+	font-weight: bold;
+	font-size: 1.75em;
+	text-align: center;
+	color: #f9f8f8;
+	text-decoration: none;
+}
+
+footer div ul {
+    display:flex;
+    list-style: none;
+}

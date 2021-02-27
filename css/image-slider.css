@@ -1,0 +1,13 @@
+.imageSliderComponent {
+
+    width: 100%;
+    display: block;
+}
+
+.imageSliderComponent .carousel-cell {
+    width: 100%;
+}
+
+.imageSliderComponent .carousel-cell img {
+    width: 100%;
+}

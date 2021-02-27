@@ -1,0 +1,168 @@
+body {
+	width: 100%;
+	margin: 0;
+    padding: 0;
+    border: 0;
+
+}
+html, body {
+	height: 100%;
+}
+
+header {
+	position: relative;
+	display: block;
+	z-index: 1;
+}
+
+.hiddenText {
+	position: absolute;
+	height: 1px;
+	width: 1px;
+	border: 0px;
+	clip: rect(1px,1px,1px,1px);
+}
+
+.colorWhite {
+	color: #fff;
+}
+
+.colorWhite a {
+	color: #fff;
+}
+
+.dottedFocus:active {
+	border: dotted 2px #000;
+}
+a.ctaButton {
+	border-radius: 10px;
+	padding: 10px 15px 10px 15px;
+	font-family: monospace, sans-serif;
+	background-color:rgba(255, 255, 255, 1);
+	text-decoration: none;
+	color: #373F51;
+	margin: 10px 0px 5px 0px;
+	display: inline-block;
+}
+a.ctaButton:hover, a.ctaButton:focus {
+	background-color: rgba(255, 255, 255, .9);
+	font-weight: bold;
+}
+
+
+
+
+/*Font Family*/
+@font-face {
+	font-family: "Modulus Pro";
+	src: url(../fonts/Modulus-Pro/modulus-pro-extra-light.otf);
+	font-weight: 200;
+  }
+@font-face {
+	font-family: "Modulus Pro";
+	src: url(../fonts/Modulus-Pro/modulus-pro-light.otf);
+	font-weight: 300;
+  }
+@font-face {
+	font-family: "Modulus Pro";
+	src: url(../fonts/Modulus-Pro/modulus-pro-regular.otf);
+	font-weight: 400;
+  }
+@font-face {
+	font-family: "Modulus Pro";
+	src: url(../fonts/Modulus-Pro/modulus-pro-medium.otf);
+	font-weight: 500;
+  }
+@font-face {
+	font-family: "Modulus Pro";
+	src: url(../fonts/Modulus-Pro/modulus-pro-semi-bold.otf);
+	font-weight: 600;
+  }
+@font-face {
+	font-family: "Modulus Pro";
+	src: url(../fonts/Modulus-Pro/modulus-pro-bold.otf);
+	font-weight: bold;
+  }
+@font-face {
+	font-family: "Modulus Pro";
+	src: url(../fonts/Modulus-Pro/modulus-pro-extra-bold.otf);
+	font-weight: 800;
+  }
+@font-face {
+	font-family: "Modulus Pro";
+	src: url(../fonts/Modulus-Pro/modulus-pro-black.otf);
+	font-weight: 900;
+  }
+
+.featuredImageComponent {
+	width: 100%;
+	display: block;
+	background-image: url("https://images.squarespace-cdn.com/content/v1/53baf4ebe4b06cb7b6c4ea8a/1591810585543-BSQ09NHSMMIP46JTL8O0/ke17ZwdGBToddI8pDm48kLkXF2pIyv_F2eUT9F60jBl7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0iyqMbMesKd95J-X4EagrgU9L3Sa3U8cogeb0tjXbfawd0urKshkc5MgdBeJmALQKw/AdobeStock_339717328.jpeg");
+	background-size: cover;
+	background-position: top;
+	height: 350px;
+}
+
+
+
+
+div.sectionHeader {
+	width: 100%;
+	display: block;
+	font-family: "Jura", sans-serif;
+	color: #f9f8f8;
+}
+
+div.sectionHeader.centered {
+	text-align: center;
+}
+
+div.sectionHeader.dark {
+	color: #373F51;	
+}
+
+
+
+div.sectionHeader h2 {
+	font-size: 5em;
+	font-weight: 700;
+	margin: 5px 0px 5px 0px;
+	font-family: 'Bebas Neue', cursive;
+	letter-spacing: 5px;;
+
+}
+
+div.sectionHeader p:first-of-type{
+	font-size: 1.5em;
+	font-weight: 700;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+div.sectionHeader p:last-of-type{
+	font-size: 1em;
+	font-weight: 700;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+div.sectionHeader div.wrapper {
+	max-width: 1600px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+div.threeColumn {
+	display: flex;
+}
+div.threeColumn div.card {
+	border-radius: 10px;
+	border: 2px solid #f9f8f8;
+	display: block;
+	height: 200px;
+	width: 33%;
+	margin: 10px;
+}
+

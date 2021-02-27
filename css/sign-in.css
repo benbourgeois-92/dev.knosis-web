@@ -1,0 +1,86 @@
+
+.signinComponent {
+
+    /*TEMPORARY*/
+    margin-right: auto;
+    margin-left: auto;
+
+
+    width: 100%;
+    max-width: 420px;
+    min-height: 812px;
+    background-color: #fafafa;
+    color: #313d46;
+    /*subtext color:  #8f949b Emergency color: #ef3f3a*/
+    /*Blue: #0d96ff lines: #e0e0e0*/
+    font-family: 'Sen', sans-serif;
+}
+.signinComponent .signinSummary {
+    padding: 15px;
+}
+
+.signinComponent .signinSummary img {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    margin-bottom: 75px;
+}
+.signinComponent .signinSummary h2, .signinComponent .signinSummary h2 + p {
+  text-align: center;
+}
+
+.signinComponent .signinSummary p {
+    margin-bottom: 75px;
+
+}
+
+.signinComponent form {
+    background-color: #fff;
+    border-bottom: 1px solid #e0e0e0;
+    border-top: 1px solid #e0e0e0;
+
+    display:block;
+
+}
+
+.signinComponent form > input {
+    background-color: #fff;
+    padding: 15px;
+    border: none;
+    display: block;
+    width: 80%;
+}
+
+.signinComponent form div {
+    display: flex;
+}
+.signinComponent form div input:first-child{
+    width: 80%;
+    border-top: 1px solid #e0e0e0;
+    border-right: none;
+    border-left: none;
+    border-bottom: none;
+    padding: 15px;
+
+}
+.signinComponent form div input:last-child{
+    width: 20%;
+    border-top: 1px solid #e0e0e0;
+    border-right: none;
+    border-left: 1px solid #e0e0e0;
+    border-bottom: none;
+    padding: 15px;
+    background-color: #fff;
+
+}
+.signinComponent form + div {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.signinComponent div:last-child p {
+    width: 100%;
+    text-align: center;
+
+}

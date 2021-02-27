@@ -1,0 +1,202 @@
+
+nav {
+	width: 100%;
+	display: block;
+	position: absolute;
+}
+
+nav .navWrapper {
+	display: flex; 
+	flex-direction: column;
+	width: 100%;
+	height: 35px;
+	overflow: hidden;
+	transition: all .5s ease-in-out;
+}
+
+
+nav #navToggle:checked ~ .navWrapper {
+	background-color: #f9f8f8;
+	height: 850px;
+
+}
+
+
+nav .navWrapper .top a.logo {
+	font-family: "Modulus Pro";
+	font-weight: bold;
+	font-size: 1.75em;
+	text-align: center;
+	color: #f9f8f8;
+	text-decoration: none;
+}
+
+nav .navWrapper div.logo {
+	display: inline-block;
+}
+
+nav .navWrapper .menuBtn {
+	color: #f9f8f8;
+	font-family: monospace;
+	font-size: 1.75em;
+	float: right;
+	margin-top: 4px;
+}
+
+nav .navWrapper .menuBtn:hover {
+	cursor: pointer;
+	font-weight: bold;
+}
+
+nav .navWrapper div.subtitle {
+	display: none;
+}
+
+nav .navWrapper .bottom .mainMenu ul li a {
+	color: #373F51;
+	font-family: monospace;
+	font-size: 2.5em;
+	text-decoration: none;
+}
+
+nav .navWrapper .bottom .mainMenu ul {
+	list-style-type: none;
+	padding-left: 0px;
+	margin-top: 100px;
+}
+
+nav .navWrapper .bottom .mainMenu ul li a:hover {
+	font-weight: bold;
+}
+
+nav .navWrapper .bottom .mainMenu ul li {
+	margin: 10px 0px 10px 0px;
+}
+
+nav .navWrapper .top, nav .navWrapper .bottom {
+	padding-left: 20px;
+}
+
+nav .navWrapper .top{
+	padding-right: 20px;
+}
+
+
+/* nav .navWrapper  {
+	background-color: #f9f8f8;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	transition: height 1s ease-in-out;
+
+} 
+
+nav #navToggle:not(:checked) ~ .navWrapper .bottom .mainMenu  {
+	height: 0%;
+
+}
+*/
+/* nav #navToggle:checked ~ .navWrapper .top {
+	background-color: #f9f8f8;
+
+} */
+
+nav #navToggle:checked ~ .navWrapper .top a.logo, nav #navToggle:checked ~ .navWrapper .top .menuBtn, nav #navToggle:checked ~ .bottom .mainMenu ul li a  {
+	color: #373F51;
+}
+
+
+
+
+
+
+
+/* Logo 
+
+div.subtitle {
+	font-family: "Modulus Pro";
+	font-weight: 600;
+	color: #f9f8f8;
+
+}
+.top {
+	display: flex;
+		flex-direction: column;
+		margin: 20px;
+		padding: 10px 20px 20px 20px;
+		border: 2px solid #f9f8f8;
+		border-radius: 10px;
+	} */
+
+/* nav ul {
+
+	list-style-type: none;
+	
+}
+nav ul li a {
+	font-family: "Modulus Pro";
+	font-weight: 300;
+	color: #f9f8f8;
+
+}
+
+nav .navWrapper {
+	width: 100%; 
+	display: flex;
+} */
+
+/* #navToggle:not(:checked) ~ .mainMenu {
+	height: 0%;
+} */
+
+
+/*Mobile*/
+/*	nav a.logo {
+		font-size: 2em;
+		text-decoration: none;
+	}
+
+	#navToggle:checked ~ nav a.logo {
+		z-index: 2;
+		color: #373F51;
+
+	}
+
+
+
+	nav .subtitle {
+		display: none;
+	}
+
+	 nav .mainMenu {
+		position: fixed;
+		background-color: #f9f8f8;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		transition: height 1s ease-in-out;
+
+	} 
+	nav .mainMenu ul li a {
+		color: #373F51;
+
+	}
+
+
+
+	#navToggle:not(:checked) ~ .mainMenu ul {
+		top: -90px;
+	}
+
+	.top {
+		padding: 0px;
+		border: 0px;
+	}
+
+
+
+}*/
