@@ -18,7 +18,9 @@
 .signinComponent .signinSummary {
     padding: 15px;
 }
-
+.signinComponent input {
+    -webkit-appearance: none;
+}
 .signinComponent .signinSummary img {
     margin-right: auto;
     margin-left: auto;
