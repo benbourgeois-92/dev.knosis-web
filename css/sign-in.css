@@ -20,7 +20,9 @@
 }
 .signinComponent input {
     -webkit-appearance: none;
-    border-radius: none;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+
 }
 .signinComponent .signinSummary img {
     margin-right: auto;
@@ -67,18 +69,24 @@
     padding: 15px;
 
 }
-.signinComponent form div input:last-child{
+.signinComponent form div input:last-child {
     width: 20%;
     border: 1px solid #e0e0e0;
     padding: 15px;
     background-color: #fff;
 
 }
+
 .signinComponent form + div {
     display: flex;
     justify-content: space-between;
-    padding: 15px;
 }
+.signinComponent form + div a {
+    padding: 15px;
+    display: block;
+    text-decoration: none;
+}
+
 
 .signinComponent div:last-child p {
     width: 100%;
