@@ -5,7 +5,7 @@
     margin-right: auto;
     margin-left: auto;
 
-
+    padding-top: 60px;
     width: 100%;
     max-width: 420px;
     min-height: 812px;
@@ -22,8 +22,10 @@
     -webkit-appearance: none;
     border-radius: 0;
     -webkit-border-radius: 0;
+    font-size: 1.5em;
 
 }
+
 .signinComponent .signinSummary img {
     margin-right: auto;
     margin-left: auto;
@@ -35,47 +37,44 @@
 }
 
 .signinComponent .signinSummary p {
-    margin-bottom: 75px;
+    margin-bottom: 60px;
 
 }
 
 .signinComponent form {
-    background-color: #fff;
-    border-bottom: 1px solid #e0e0e0;
-    border-top: 1px solid #e0e0e0;
-
     display:block;
-
+}
+.signinComponent form div:first-child input {
+    width: 100%;
+}
+.signinComponent form div:last-child input {
+    width: 100%;
+}
+.signinComponent form div:last-child input {
+    border-bottom: 1px solid #e0e0e0;
+}
+.signinComponent form div:last-child input:last-child {
+    border-left: 1px solid #e0e0e0;
+    text-align: center;
+    width: 30%;
+}
+.signinComponent form div input::placeholder {
+    color: #8f949b;
 }
 
-.signinComponent form > input {
+
+.signinComponent form div input {
     background-color: #fff;
     padding: 15px;
     border: none;
     display: block;
-    width: 80%;
+    border-top: 1px solid #e0e0e0;
 }
 
 .signinComponent form div {
     display: flex;
 }
 
-.signinComponent form div input:first-child{
-    width: 80%;
-    border-top: 1px solid #e0e0e0;
-    border-right: none;
-    border-left: none;
-    border-bottom: none;
-    padding: 15px;
-
-}
-.signinComponent form div input:last-child {
-    width: 20%;
-    border: 1px solid #e0e0e0;
-    padding: 15px;
-    background-color: #fff;
-
-}
 
 .signinComponent form + div {
     display: flex;
@@ -85,11 +84,17 @@
     padding: 15px;
     display: block;
     text-decoration: none;
+    color: #0d96ff;
 }
 
-
-.signinComponent div:last-child p {
-    width: 100%;
+.signinComponent div p {
+    display: block;
     text-align: center;
+    margin: 0;
+}
+
+.signinComponent .copyrightInfo {
+    padding: 15px;
+    border-top: 1px solid #e0e0e0;
 
 }
