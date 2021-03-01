@@ -1,0 +1,150 @@
+
+.activityComponent {
+
+    /*TEMPORARY*/
+    margin-right: auto;
+    margin-left: auto;
+
+
+    width: 100%;
+    max-width: 1000px;
+    min-height: 812px;
+    background-color: #fafafa;
+    color: #313d46;
+    font-family: 'Sen', sans-serif !important;
+}
+.activityComponent .activitySummary {
+    border-bottom: 1px solid #e0e0e0;
+    padding: 15px;
+}
+
+.activityComponent ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0;
+}
+
+.activityComponent .activitySummary button.squareIcon {
+    width: 50px;
+    height: 50px;
+    display: block;
+    border: 1px solid transparent;
+    background-size: 25px 25px !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+
+}
+
+
+.activityComponent .activitySummary button.squareIcon:hover, .activityComponent .activitySummary button.squareIcon:focus {
+    background-color:#fff;
+    cursor: pointer;
+    transform: scale(1.1);
+    border: 1px solid #e0e0e0;
+
+}
+
+.activityComponent .activitySummary ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 0;
+    margin: 0;
+}
+
+.activityComponent .activitySummary .squareIcon.sort {
+    text-indent: -9999px;
+    background: url(../images/icons/sort.svg); 
+
+}
+
+.activityComponent .activitySummary h2, .activityComponent .activitySummary h2 + p {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 2.25em;
+
+}
+.activityComponent .activitySummary h2 + p + p {
+    text-align: center;
+}
+
+.activityComponent .activitySummary h2, .activityComponent .activitySummary p {
+    margin-top: 0;
+    text-align: center;
+}
+.activityComponent .activitySummary p {
+    font-size: 1.5em;
+}
+
+.activityComponent .activitySummary p span {
+    font-weight: bold;
+
+}
+
+.activityComponent .activityListview {
+    padding-left: 0;
+    display: inline-block;
+    width: 100%;
+    margin-top: 0px;
+}
+
+.activityComponent .activityListview .individualTransaction button {
+    display: flex;
+    width: 100%;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    background-color: #fff;
+    justify-content: space-between;
+    padding: 15px;
+}
+.activityComponent .activityListview .individualTransaction button div h2 {
+    text-align: left;
+}
+.activityComponent .activityListview .individualTransaction button div:last-child p {
+    text-align: right;
+}
+.activityComponent .activityListview .transactionDays div.dateSummary {
+    border-bottom: 1px solid #e0e0e0;
+    padding: 15px;
+}
+.activityComponent .activityListview .transactionDays div.dateSummary h2 {
+    font-size: 1em;
+    margin: 0px;
+}
+
+.activityComponent .individualGoal:hover {
+    cursor: pointer;
+    background-color: #313d46;
+    color: #fff;
+}
+.activityComponent .individualGoal:hover button {
+    color: #fff;
+    cursor: pointer;
+
+}
+.activityComponent .individualGoal:hover .statusBar {
+    border-color: #fff;
+}
+
+.activityComponent .individualGoal button:not(.deleteButton) {
+    display:flex;
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    text-align: left;
+    padding-top: 15px;
+    padding-bottom: 15px; 
+    font-family: 'Sen', sans-serif;
+    font-size: 1em;
+}
+
+.activityComponent .individualTransaction {
+    background-color: #fff;
+    list-style-type: none;
+    border-bottom: 1px solid #e0e0e0;
+
+}
