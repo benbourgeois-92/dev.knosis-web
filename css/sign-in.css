@@ -20,6 +20,7 @@
 }
 .signinComponent input {
     -webkit-appearance: none;
+    border-radius: none;
 }
 .signinComponent .signinSummary img {
     margin-right: auto;
@@ -56,6 +57,7 @@
 .signinComponent form div {
     display: flex;
 }
+
 .signinComponent form div input:first-child{
     width: 80%;
     border-top: 1px solid #e0e0e0;
@@ -67,10 +69,7 @@
 }
 .signinComponent form div input:last-child{
     width: 20%;
-    border-top: 1px solid #e0e0e0;
-    border-right: none;
-    border-left: 1px solid #e0e0e0;
-    border-bottom: none;
+    border: 1px solid #e0e0e0;
     padding: 15px;
     background-color: #fff;
 
