@@ -99,6 +99,7 @@
     justify-content: space-between;
     padding: 15px;
     border:0;
+    font-size: 1em;
 }
 .activityComponent .activityListview .individualTransaction button div h2 {
     text-align: left;
