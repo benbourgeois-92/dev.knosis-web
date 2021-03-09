@@ -320,7 +320,46 @@
 							</div>
 						</div>
 					</div>
+					<div class="editTransactionDetails">
+						<p>March 9, 4:33pm</p>
+						<h2>Transaction Title</h2>
+						<p class="transactionValue">$10.69</p>
+						<form>
+							<div>
+								<label for="transactionTypes">Edit Transaction Type:</label>
+								<select id="transactionTypes">
+									<option value="Money Transfers">Money Transfers</option>
+									<option value="Other Income">Other Income</option>
+									<option value="Custom Option">Custom Option</option>
+									<option value="Income">Income</option>
+								</select>								
+							</div>
+
+							
+
+
+							<div>
+								<label for="spendFrom">Spend From:</label>
+								<select id="spendFrom">								
+									<option value="SafeToSpend">Safe-To-Spend</option>
+									<option value="Bills">Bills</option>
+									<option value="Groceries">Groceries</option>
+									<option value="Fun">Fun</option>
+								</select>
+							</div>
+							<section>
+								<label for="transactionNotes">Transaction Notes:</label>
+								<input type="text" id="transactionNotes" placeholder="write notes here!">									
+							</section>
+
+
+							<input type="submit" value="Save and Close" id="saveAndSubmit">
+							<input type="button" value="Close" id="close">
+
+					  </form>
+					</div>
 					<div class="activityListview">
+						<p class="noTransactions" style="display:none;">No transactions at this time</p>
 						<ul>
 							<li class="transactionDays">
 								<div class="dateSummary">
@@ -331,8 +370,8 @@
 											<button>
 												<div>
 													<h2>Spotify</h2>
-													<p>Spent from <span>Bills</span></p>
-													<p>Note: Gift to GF</p>
+													<p>Spent from <span style="color:#0d96ff;">Bills</span></p>
+													<p>Note: Gift to GFNote: Gift to GFNote: Gift to GFNote: Gift to GF</p>
 
 												</div>
 												<div>
@@ -344,11 +383,11 @@
 									<li class="individualTransaction">
 											<button>
 												<div>
-													<h2>Coinbase Inc</h2>
-													<p>Spent from <span>Safe-To-Spend</span></p>
+													<h2>Coinbase IncCoinbase Inc Coinbase Inc Coinbase Inc</h2>
+													<p>Spent from <span style="color:#0d96ff;">Safe-To-Spend</span></p>
 												</div>
 												<div>
-													<p class="transactionValue credit">$7810.89</p>
+													<p class="transactionValue credit">$100000.89</p>
 													<p>Money Transfers</p>
 												</div>
 											</button>
@@ -363,8 +402,10 @@
 									<li class="individualTransaction">
 											<button>
 												<div>
-													<h2>Spotify</h2>
-													<p>Spent from <span>Bills</span></p>
+													<h2>Gamestop</h2>
+													<p>Spent from <span style="color:#0d96ff;">PS5 Fund</span></p>
+													<p>Note: Bought new ps5 for bf</p>
+
 												</div>
 												<div>
 													<p class="transactionValue">$10.69</p>
@@ -376,14 +417,38 @@
 											<button>
 												<div>
 													<h2>Coinbase Inc</h2>
-													<p>Spent from <span>Safe-To-Spend</span></p>
+													<p>Spent from <span style="color:#0d96ff;">Safe-To-Spend</span></p>
 												</div>
 												<div>
-													<p class="transactionValue">$7810.89</p>
+													<p class="transactionValue credit">$7895.89</p>
 													<p>Money Transfers</p>
 												</div>
 											</button>
 									</li>
+									<li class="individualTransaction">
+										<button>
+											<div>
+												<h2>Sheetz Gas</h2>
+												<p>Spent from <span style="color:#0d96ff;">Gas</span></p>
+											</div>
+											<div>
+												<p class="transactionValue">$35.89</p>
+												<p>Convenience Stores</p>
+											</div>
+										</button>
+								</li>
+								<li class="individualTransaction">
+									<button>
+										<div>
+											<h2>Lowes Foods</h2>
+											<p>Spent from <span style="color:#0d96ff;">Groceries</span></p>
+										</div>
+										<div>
+											<p class="transactionValue">$95.89</p>
+											<p>Money Transfers</p>
+										</div>
+									</button>
+							</li>
 								</ul>
 							</li>
 	

@@ -89,6 +89,7 @@
     display: inline-block;
     width: 100%;
     margin-top: 0px;
+    position: relative;
 }
 
 .activityComponent .activityListview .individualTransaction button {
@@ -103,25 +104,36 @@
     text-align: left;
     margin-top: 0;
 }
-.activityComponent .activityListview .transactionValue {
+.activityComponent .transactionValue {
     margin-top: 0;
+    font-size: 1.5em;
     font-weight: bold;
     color: #ef3f3a; 
-
 }
 
 .activityComponent .activityListview .transactionValue.credit {
     color: #5dd38c;   
 }
 .activityComponent .activityListview .transactionValue.credit:before {
-    content:"+ "
+    content:"+ ";
+    display: inline-block;
 }
-
+.activityComponent .activityListview .individualTransaction button div:last-child {
+    min-width: 118px;
+}
 .activityComponent .activityListview .individualTransaction button div:last-child p {
     text-align: right;
+    margin-top: 0;
+    margin-bottom: 15px;
 }
 .activityComponent .activityListview .individualTransaction button div p:last-child {
     margin-bottom: 0;
+
+}
+p.noTransactions { width: 100%; text-align: center; position: absolute;  }
+
+.activityComponent .activityListview .individualTransaction button div:first-child p {
+    text-align: left;
 }
 .activityComponent .activityListview .transactionDays div.dateSummary {
     border-bottom: 1px solid #e0e0e0;
@@ -132,16 +144,12 @@
     margin: 0px;
 }
 
-.activityComponent .individualGoal:hover {
+.activityComponent .individualTransaction button:hover {
     cursor: pointer;
     background-color: #313d46;
     color: #fff;
 }
-.activityComponent .individualGoal:hover button {
-    color: #fff;
-    cursor: pointer;
 
-}
 .activityComponent .individualGoal:hover .statusBar {
     border-color: #fff;
 }
@@ -163,4 +171,50 @@
     list-style-type: none;
     border-bottom: 1px solid #e0e0e0;
 
+
+
 }
+
+/*Edit Transaction Window*/
+.activityComponent .editTransactionDetails {
+    padding: 15px;
+}
+.activityComponent .editTransactionDetails form input, .activityComponent .editTransactionDetails label {
+    width: 100%;
+    display: block;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+.activityComponent .editTransactionDetails div {
+    display: flex;
+    margin-bottom: 15px;
+
+}
+.activityComponent .editTransactionDetails section {
+    margin-bottom: 15px;
+
+}
+
+.activityComponent .editTransactionDetails div select {
+    padding: 15px;
+
+}
+.activityComponent .editTransactionDetails div label {
+    padding: 15px 15px 15px 0px;
+
+}
+
+.activityComponent .editTransactionDetails #transactionNotes {
+    padding: 15px 0px;
+    margin-top: 15px; 
+    text-align: center;
+
+}
+
+.activityComponent #saveAndSubmit, .activityComponent #close {
+    padding: 15px 0px;
+    margin-bottom: 15px;
+
+}
+
