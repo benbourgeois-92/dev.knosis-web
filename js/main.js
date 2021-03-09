@@ -9,20 +9,20 @@ $(document).ready(function(){
     //EDIT TRANSACTION DETAILS COMPONENT
     $(".activityComponent .editTransactionDetails").hide();
     $(".activityComponent .editTransactionDetails #close").click(function(){
-      var menuHeight = $(window).height();
-      $(".activityComponent .editTransactionDetails").css({"height": menuHeight});
+      var componentHeight = $(".activityComponent").height();
+      $(".activityComponent .editTransactionDetails").css({"height": componentHeight});
       $(".activityComponent .editTransactionDetails").slideToggle();
 
     });
     $(".activityComponent .editTransactionDetails #saveAndClose").click(function(){
-      var menuHeight = $(window).height();
-      $(".activityComponent .editTransactionDetails").css({"height": menuHeight});
+      var componentHeight = $(window).height();
+      $(".activityComponent .editTransactionDetails").css({"height": componentHeight});
       $(".activityComponent .editTransactionDetails").slideToggle();
 
     });
     $(".activityComponent .individualTransaction button").click(function(){
-      var menuHeight = $(window).height();
-      // $(".activityComponent .editTransactionDetails").css({"height": menuHeight});
+      var componentHeight = $(window).height();
+      $(".activityComponent .editTransactionDetails").css({"height": componentHeight});
       $(".activityComponent .editTransactionDetails").slideToggle();
 
     });
