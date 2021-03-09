@@ -6,6 +6,32 @@ $(document).ready(function(){
 
     });
 
+    //EDIT TRANSACTION DETAILS COMPONENT
+    $(".activityComponent .editTransactionDetails").hide();
+    $(".activityComponent .editTransactionDetails #close").click(function(){
+      var menuHeight = $(window).height();
+      $(".activityComponent .editTransactionDetails").css({"height": menuHeight});
+      $(".activityComponent .editTransactionDetails").slideToggle();
+
+    });
+    $(".activityComponent .editTransactionDetails #saveAndClose").click(function(){
+      var menuHeight = $(window).height();
+      $(".activityComponent .editTransactionDetails").css({"height": menuHeight});
+      $(".activityComponent .editTransactionDetails").slideToggle();
+
+    });
+    $(".activityComponent .individualTransaction button").click(function(){
+      var menuHeight = $(window).height();
+      // $(".activityComponent .editTransactionDetails").css({"height": menuHeight});
+      $(".activityComponent .editTransactionDetails").slideToggle();
+
+    });
+    //END: EDIT TRANSACTION DETAILS COMPONENT
+
+
+
+
+
     var showMenuToggle = false;
     
     $("#menuToggleBtn").click(function(){
@@ -26,7 +52,7 @@ $(document).ready(function(){
         setTimeout(function() { 
           $(".navWrapper").css("background", "transparent");
       }, 400);
-      
+
         showMenuToggle = false;
 
       }

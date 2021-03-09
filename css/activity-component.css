@@ -7,7 +7,7 @@
 
 
     width: 100%;
-    max-width: 420px;
+    max-width: 1000px;
     min-height: 812px;
     background-color: #fafafa;
     color: #313d46;
@@ -103,6 +103,7 @@
 .activityComponent .activityListview .individualTransaction button div h2 {
     text-align: left;
     margin-top: 0;
+    font-size: 1.5em;
 }
 
 .activityComponent .activityListview .individualTransaction button div p {
@@ -181,8 +182,16 @@ p.noTransactions { width: 100%; text-align: center; position: absolute;  }
 }
 
 /*Edit Transaction Window*/
+.activityComponent {
+    overflow: hidden;
+}
 .activityComponent .editTransactionDetails {
     padding: 15px;
+    background-color: #fafafa;
+    z-index: 2;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
 }
 .activityComponent .editTransactionDetails form input, .activityComponent .editTransactionDetails label {
     width: 100%;
