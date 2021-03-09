@@ -7,7 +7,7 @@
 
 
     width: 100%;
-    max-width: 1000px;
+    max-width: 420px;
     min-height: 812px;
     background-color: #fafafa;
     color: #313d46;
@@ -94,25 +94,41 @@
 .activityComponent .activityListview .individualTransaction button {
     display: flex;
     width: 100%;
-    border-top: 0;
-    border-left: 0;
-    border-right: 0;
     background-color: #fff;
     justify-content: space-between;
     padding: 15px;
+    border:0;
 }
 .activityComponent .activityListview .individualTransaction button div h2 {
     text-align: left;
+    margin-top: 0;
 }
+.activityComponent .activityListview .transactionValue {
+    margin-top: 0;
+    font-weight: bold;
+    color: #ef3f3a; 
+
+}
+
+.activityComponent .activityListview .transactionValue.credit {
+    color: #5dd38c;   
+}
+.activityComponent .activityListview .transactionValue.credit:before {
+    content:"+ "
+}
+
 .activityComponent .activityListview .individualTransaction button div:last-child p {
     text-align: right;
 }
+.activityComponent .activityListview .individualTransaction button div p:last-child {
+    margin-bottom: 0;
+}
 .activityComponent .activityListview .transactionDays div.dateSummary {
     border-bottom: 1px solid #e0e0e0;
-    padding: 15px;
+    padding: 10px 15px 10px 15px;
 }
 .activityComponent .activityListview .transactionDays div.dateSummary h2 {
-    font-size: 1em;
+    font-size: .75em;
     margin: 0px;
 }
 
