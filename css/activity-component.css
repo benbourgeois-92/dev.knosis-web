@@ -104,16 +104,17 @@
 .activityComponent .activityListview .individualTransaction button div h2 {
     text-align: left;
     margin-top: 0;
-    font-size: 1.5em;
+    font-size: 1.17em;
 }
 
 .activityComponent .activityListview .individualTransaction button div p {
     font-size: 1em;
+    font-family: 'Sen', sans-serif;
 }
 
-.activityComponent .transactionValue {
+.activityComponent p.transactionValue {
     margin-top: 0;
-    font-size: 1.5em;
+    font-size: 1.17em !important;
     font-weight: bold;
     color: #ef3f3a; 
 }
