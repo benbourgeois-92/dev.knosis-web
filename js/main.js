@@ -69,6 +69,6 @@ $(document).ready(function(){
 
     var grid = new Muuri('.grid', {
       items: '.item',
-      dragEnabled: true
+      dragEnabled: false
     });
   });
