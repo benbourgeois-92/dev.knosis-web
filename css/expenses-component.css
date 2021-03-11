@@ -94,6 +94,9 @@
     display: inline-block;
     width: 100%;
     margin-top: 0px;
+
+    position: relative;
+
 }
 
 
@@ -129,7 +132,10 @@
     background-color: #fff;
     list-style-type: none;
     border-bottom: 1px solid #e0e0e0;
-    display:block;
+    display: block;
+    width: 100%;
+
+    position: absolute;
 
 }
 .expensesComponent .individualExpense button div p, .expensesComponent .individualExpense button div h2 {

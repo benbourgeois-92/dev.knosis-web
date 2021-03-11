@@ -14,7 +14,6 @@
 
 	<link rel="stylesheet" type="text/css" href="../css/footer.css">
 
-
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -22,12 +21,21 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script
+src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+
 	<script type="text/javascript" src="https://kit.fontawesome.com/a1117c77b3.js" crossorigin="anonymous"></script>
+	
 
 	<!--Flickity-->
 	<link rel="stylesheet" type="text/css" media="screen" href="https://unpkg.com/flickity@2.2.2/dist/flickity.min.css">
 	<script type="text/javascript" src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+	
+	<!-- Murri -->
+	<script src="https://cdn.jsdelivr.net/npm/muuri@0.9.3/dist/muuri.min.js"></script>
+
 	<script type="text/javascript" src="../js/main.js"></script>
 
 
@@ -119,42 +127,152 @@
 					</div>
 				</div>
 				<div>
-					<ul class="expensesListview">
-						<li class="individualExpense listElement-carousel">
-							<button class="carousel-cell">
-								<div>
-									<h3>Emergency Fund</h3>
-									<p><span>$943.60</span> of $250.00</p>
-									<p>March 5th &bull; the 5th of every month</p>
-									<p><span>$250/Paycheck</span> &bull; <span style="color: #ef3f3a;">No automatic spending</span></p>
+					<ul class="expensesListview grid">
+						<li class="individualExpense item">
+							<div class="item-content listElement-carousel">
+								<button class="carousel-cell ">
+									<div>
+										<h3>Emergency Fund</h3>
+										<p><span>$943.60</span> of $250.00</p>
+										<p>March 5th &bull; the 5th of every month</p>
+										<p><span>$250/Paycheck</span> &bull; <span style="color: #ef3f3a;">No automatic spending</span></p>
 
-								</div>
-								<div>
-									<div class="statusBar"><span style="background-color:#0d96ff; width: 100%;"></span></div>
+									</div>
+									<div>
+										<div class="statusBar"><span style="background-color:#0d96ff; width: 100%;"></span></div>
 
-								</div>								
-							</button>
-							<button class="carousel-cell deleteButton">Delete</button>
-
+									</div>								
+								</button>
+								<button class="carousel-cell deleteButton">Delete</button>
+							</div>
 						</li>
-						<li class="individualExpense listElement-carousel">
-							<button class="carousel-cell">
-								<div>
-									<h3>Gas</h3>
-									<p><span>$50.00</span> of $100.00</p>
-									<p>March 5th &bull; the 5th of every month</p>
-									<p><span>$115/Paycheck</span> &bull; <span style="color: #ef3f3a;">No automatic spending</span></p>
+						<li class="individualExpense item">
+							<div class="item-content listElement-carousel">
+								<button class="carousel-cell">
+									<div>
+										<h3>Gas</h3>
+										<p><span>$50.00</span> of $100.00</p>
+										<p>March 5th &bull; the 5th of every month</p>
+										<p><span>$115/Paycheck</span> &bull; <span style="color: #ef3f3a;">No automatic spending</span></p>
 
-								</div>
-								<div>
-									<div class="statusBar"><span style="background-color:#0d96ff; width: 50%;"></span></div>
+									</div>
+									<div>
+										<div class="statusBar"><span style="background-color:#0d96ff; width: 50%;"></span></div>
 
-								</div>
-							</button>
-							<button class="carousel-cell deleteButton">Delete</button>
-
+									</div>
+								</button>
+								<button class="carousel-cell deleteButton">Delete</button>
+							</div>
 						</li>
-						<li class="individualExpense listElement-carousel">
+						<li class="individualExpense item">
+							<div class="item-content listElement-carousel">
+								<button class="carousel-cell ">
+									<div>
+										<h3>Emergency Fund</h3>
+										<p><span>$943.60</span> of $250.00</p>
+										<p>March 5th &bull; the 5th of every month</p>
+										<p><span>$250/Paycheck</span> &bull; <span style="color: #ef3f3a;">No automatic spending</span></p>
+
+									</div>
+									<div>
+										<div class="statusBar"><span style="background-color:#0d96ff; width: 100%;"></span></div>
+
+									</div>								
+								</button>
+								<button class="carousel-cell deleteButton">Delete</button>
+							</div>
+						</li>
+						<li class="individualExpense item">
+							<div class="item-content listElement-carousel">
+								<button class="carousel-cell">
+									<div>
+										<h3>Gas</h3>
+										<p><span>$50.00</span> of $100.00</p>
+										<p>March 5th &bull; the 5th of every month</p>
+										<p><span>$115/Paycheck</span> &bull; <span style="color: #ef3f3a;">No automatic spending</span></p>
+
+									</div>
+									<div>
+										<div class="statusBar"><span style="background-color:#0d96ff; width: 50%;"></span></div>
+
+									</div>
+								</button>
+								<button class="carousel-cell deleteButton">Delete</button>
+							</div>
+						</li>
+						<li class="individualExpense item">
+							<div class="item-content listElement-carousel">
+								<button class="carousel-cell ">
+									<div>
+										<h3>Emergency Fund</h3>
+										<p><span>$943.60</span> of $250.00</p>
+										<p>March 5th &bull; the 5th of every month</p>
+										<p><span>$250/Paycheck</span> &bull; <span style="color: #ef3f3a;">No automatic spending</span></p>
+
+									</div>
+									<div>
+										<div class="statusBar"><span style="background-color:#0d96ff; width: 100%;"></span></div>
+
+									</div>								
+								</button>
+								<button class="carousel-cell deleteButton">Delete</button>
+							</div>
+						</li>
+						<li class="individualExpense item">
+							<div class="item-content listElement-carousel">
+								<button class="carousel-cell">
+									<div>
+										<h3>Gas</h3>
+										<p><span>$50.00</span> of $100.00</p>
+										<p>March 5th &bull; the 5th of every month</p>
+										<p><span>$115/Paycheck</span> &bull; <span style="color: #ef3f3a;">No automatic spending</span></p>
+
+									</div>
+									<div>
+										<div class="statusBar"><span style="background-color:#0d96ff; width: 50%;"></span></div>
+
+									</div>
+								</button>
+								<button class="carousel-cell deleteButton">Delete</button>
+							</div>
+						</li>
+						<li class="individualExpense item">
+							<div class="item-content listElement-carousel">
+								<button class="carousel-cell ">
+									<div>
+										<h3>Emergency Fund</h3>
+										<p><span>$943.60</span> of $250.00</p>
+										<p>March 5th &bull; the 5th of every month</p>
+										<p><span>$250/Paycheck</span> &bull; <span style="color: #ef3f3a;">No automatic spending</span></p>
+
+									</div>
+									<div>
+										<div class="statusBar"><span style="background-color:#0d96ff; width: 100%;"></span></div>
+
+									</div>								
+								</button>
+								<button class="carousel-cell deleteButton">Delete</button>
+							</div>
+						</li>
+						<li class="individualExpense item">
+							<div class="item-content listElement-carousel">
+								<button class="carousel-cell">
+									<div>
+										<h3>Gas</h3>
+										<p><span>$50.00</span> of $100.00</p>
+										<p>March 5th &bull; the 5th of every month</p>
+										<p><span>$115/Paycheck</span> &bull; <span style="color: #ef3f3a;">No automatic spending</span></p>
+
+									</div>
+									<div>
+										<div class="statusBar"><span style="background-color:#0d96ff; width: 50%;"></span></div>
+
+									</div>
+								</button>
+								<button class="carousel-cell deleteButton">Delete</button>
+							</div>
+						</li>
+						<!-- <li class="individualExpense listElement-carousel">
 							<button class="carousel-cell">
 								<div>
 									<h3>Groceries</h3>
@@ -204,7 +322,7 @@
 							</button>
 							<button class="carousel-cell deleteButton">Delete</button>
 
-						</li>
+						</li> -->
 					</ul>
 				</div>
 
