@@ -214,7 +214,7 @@ p.noTransactions { width: 100%; text-align: center; position: absolute;  }
 .activityComponent .editTransactionDetails div select {
     padding: 15px;
     -webkit-border-radius: 0;
-    font-size: inherit;
+    font-size: 1em;
 
 }
 .activityComponent .editTransactionDetails div select:hover {
