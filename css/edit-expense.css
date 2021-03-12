@@ -15,7 +15,7 @@
 }
 .editExpenseComponent .activitySummary {
     border-bottom: 1px solid #e0e0e0;
-    padding: 15px;
+    padding: 30px;
 }
 
 .editExpenseComponent ul {
@@ -34,6 +34,7 @@
     background-position: center !important;
     border-radius: 5px;
     transition: all 0.5s ease-in-out;
+    text-indent: -9999px;
 
 }
 
@@ -55,18 +56,29 @@
     margin: 0;
 }
 
-.editExpenseComponent .activitySummary .squareIcon.sort {
-    text-indent: -9999px;
-    background: url(../images/icons/sort.svg); 
+.editExpenseComponent .activitySummary .squareIcon.transfer {
+    background: url(../images/icons/exchange-alt-solid.svg); 
+
+}
+.editExpenseComponent .activitySummary .squareIcon.delete {
+    background: url(../images/icons/trash-solid.svg); 
 
 }
 
-.editExpenseComponent .activitySummary h2, .editExpenseComponent .activitySummary h2 + p {
+.editExpenseComponent .activitySummary .squareIcon.edit {
+    background: url(../images/icons/edit-solid.svg); 
+
+}
+
+
+.editExpenseComponent .activitySummary h2 {
   text-align: center;
-  margin-bottom: 10px;
-  font-size: 2.25em;
+  margin-bottom: 15px;
+  font-size: 2em;
 
 }
+
+
 .editExpenseComponent .activitySummary h2 + p + p {
     text-align: center;
 }
@@ -76,7 +88,7 @@
     text-align: center;
 }
 .editExpenseComponent .activitySummary p {
-    font-size: 1.5em;
+    font-size: 1em;
 }
 
 .editExpenseComponent .activitySummary p span {

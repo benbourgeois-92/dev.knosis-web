@@ -11,6 +11,8 @@
 	<link rel="stylesheet" type="text/css" href="../css/goals-component.css">
 	<link rel="stylesheet" type="text/css" href="../css/sign-in.css">
 	<link rel="stylesheet" type="text/css" href="../css/activity-component.css">
+	<link rel="stylesheet" type="text/css" href="../css/edit-expense.css">
+
 
 	<link rel="stylesheet" type="text/css" href="../css/footer.css">
 
@@ -683,11 +685,17 @@
 		<div>
 			<div class="editExpenseComponent">
 					<div class="activitySummary">
-						<h2>Activity</h2>
-						<div>
+						<h2>Emergency Fund</h2>
+						<p><span>$943.60</span> of $250.00</p>
+						<p>March 5th &bull; the 5th of every month</p>
+						<p><span>$2500.00/Paycheck</span> &bull; <span style="color: #ef3f3a;">No automatic spending</span></p>
+		<div>
 							<div>
 								<ul>
-									<li><button class="squareIcon sort">Sort Transactions</button></li>
+									<li><button class="squareIcon edit">Edit Expense Name</button></li>
+									<li><button class="squareIcon delete">Delete Expense</button></li>
+									<li><button class="squareIcon transfer">Transfer Funds to Another Expense</button></li>
+
 								</ul>
 								
 							</div>
@@ -732,8 +740,8 @@
 								<label for="transactionNotes">Transaction Notes:</label>
 								<input type="text" id="transactionNotes" placeholder="write notes here!">	
 								
-								<label for="creditcard">Enter price:</label> <input inputmode="numeric" pattern="[0-9]*" type="text" name="creditcard">
-			
+								<label for="currency-field">Enter Amount</label>
+								<input type="text" data-type="currency" name="currency-field" id="currency-field" pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$">		
 							</section>
 
 
