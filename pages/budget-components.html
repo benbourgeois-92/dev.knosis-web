@@ -21,10 +21,7 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
-	<script
-src="https://code.jquery.com/jquery-3.6.0.min.js"
-  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-  crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 	<script type="text/javascript" src="https://kit.fontawesome.com/a1117c77b3.js" crossorigin="anonymous"></script>
 	
@@ -34,7 +31,7 @@ src="https://code.jquery.com/jquery-3.6.0.min.js"
 	<script type="text/javascript" src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 	
 	<!-- Murri -->
-	<script src="https://cdn.jsdelivr.net/npm/muuri@0.9.3/dist/muuri.min.js"></script>
+	<!-- <script src="https://cdn.jsdelivr.net/npm/muuri@0.9.3/dist/muuri.min.js"></script> -->
 
 	<script type="text/javascript" src="../js/main.js"></script>
 
@@ -127,8 +124,8 @@ src="https://code.jquery.com/jquery-3.6.0.min.js"
 					</div>
 				</div>
 				<div>
-					<ul class="expensesListview grid">
-						<li class="individualExpense item listElement-carousel item-content ">
+					<ul class="expensesListview">
+						<li class="individualExpense listElement-carousel">
 								<button class="carousel-cell">
 									<div>
 										<h3>Emergency Fund</h3>
@@ -144,7 +141,7 @@ src="https://code.jquery.com/jquery-3.6.0.min.js"
 								</button>
 								<button class="carousel-cell deleteButton">Delete</button>
 						</li>
-						<li class="individualExpense item item-content listElement-carousel">
+						<li class="individualExpense listElement-carousel">
 								<button class="carousel-cell">
 									<div>
 										<h3>Gas</h3>
@@ -160,7 +157,7 @@ src="https://code.jquery.com/jquery-3.6.0.min.js"
 								</button>
 								<button class="carousel-cell deleteButton">Delete</button>
 						</li>
-						<li class="individualExpense item item-content listElement-carousel">
+						<li class="individualExpense listElement-carousel">
 								<button class="carousel-cell">
 									<div>
 										<h3>Emergency Fund</h3>
@@ -175,60 +172,25 @@ src="https://code.jquery.com/jquery-3.6.0.min.js"
 									</div>								
 								</button>
 								<button class="carousel-cell deleteButton">Delete</button>
+						</li>
+
+					<li class="individualExpense listElement-carousel">
+						<button class="carousel-cell">
+							<div>
+								<h3>Emergency Fund</h3>
+								<p><span>$943.60</span> of $250.00</p>
+								<p>March 5th &bull; the 5th of every month</p>
+								<p><span>$250/Paycheck</span> &bull; <span style="color: #ef3f3a;">No automatic spending</span></p>
+
 							</div>
-						</li>
+							<div>
+								<div class="statusBar"><span style="background-color:#0d96ff; width: 100%;"></span></div>
+
+							</div>								
+						</button>
+						<button class="carousel-cell deleteButton">Delete</button>
+					</li>
 					
-						<!-- <li class="individualExpense listElement-carousel">
-							<button class="carousel-cell">
-								<div>
-									<h3>Groceries</h3>
-									<p><span>$4.56</span> of $400.00</p>
-									<p>March 5th &bull; the 5th of every month</p>
-									<p><span>$400/Paycheck</span> &bull; <span style="">Lowes Foods</span></p>
-
-								</div>
-								<div>
-									<div class="statusBar"><span style="background-color:#0d96ff; width: 50%;"></span></div>
-
-								</div>
-							</button>
-							<button class="carousel-cell deleteButton">Delete</button>
-
-						</li>
-						<li class="individualExpense listElement-carousel">
-							<button class="carousel-cell">
-								<div>
-									<h3>Phone</h3>
-									<p><span>$20.30</span> of $35.00</p>
-									<p>March 5th &bull; the 5th of every month</p>
-									<p><span>$35/Paycheck</span> &bull; <span>Verizon</span></p>
-
-								</div>
-								<div>
-									<div class="statusBar"><span style="background-color:#0d96ff; width: 50%;"></span></div>
-
-								</div>
-							</button>
-							<button class="carousel-cell deleteButton">Delete</button>
-
-						</li>
-						<li class="individualExpense main-carousel listElement-carousel">
-							<button class="carousel-cell">
-								<div>
-									<h3>Car Insurance</h3>
-									<p><span>$50.30</span> of $101.00</p>
-									<p>March 5th &bull; the 5th of every month</p>
-									<p><span>$101/Paycheck</span> &bull; <span>Geico Insurance</span></p>
-
-								</div>
-								<div>
-									<div class="statusBar"><span style="background-color:#0d96ff; width: 50%;"></span></div>
-
-								</div>								
-							</button>
-							<button class="carousel-cell deleteButton">Delete</button>
-
-						</li> -->
 					</ul>
 				</div>
 
@@ -717,6 +679,74 @@ src="https://code.jquery.com/jquery-3.6.0.min.js"
 			</div>		   
 		</div>
 		<!--END: ACTIVITY COMPONENT-->
+	   	<!--BEGIN: EDIT EXPENSE COMPONENT--> 
+		<div>
+			<div class="editExpenseComponent">
+					<div class="activitySummary">
+						<h2>Activity</h2>
+						<div>
+							<div>
+								<ul>
+									<li><button class="squareIcon sort">Sort Transactions</button></li>
+								</ul>
+								
+							</div>
+						</div>
+					</div>
+					<div class="editExpenseDetails">
+						<p>March 9, 4:33pm</p>
+						<h2>Transaction Title</h2>
+						<p class="transactionValue">$10.69</p>
+						<form>
+							<section>
+								<label for="transactionTypes">Edit Transaction Type:</label>
+								<select style="background-color: #fafafa; color: #313d46;" id="transactionTypes">
+									<option value="Money Transfers">Money Transfers</option>
+									<option value="Other Income">Other Income</option>
+									<option value="Custom Option">Custom Option</option>
+									<option value="Income">Income</option>
+								</select>								
+							</section>
+
+							
+
+
+							<section>
+								<label for="spendFrom">Spend From:</label>
+								<select style="background-color: #fafafa; color: #313d46;" id="spendFrom">								
+									<option value="SafeToSpend">Safe-To-Spend</option>
+									<option value="Bills">Bills ($220.00)</option>
+									<option value="Groceries">Groceries ($220.00)</option>
+									<option value="Fun">Fun ($220.00)</option>
+									<option value="SafeToSpend">Safe-To-Spend</option>
+									<option value="Bills">Bills ($220.00)</option>
+									<option value="Groceries">Groceries ($3220.00)</option>
+									<option value="Fun">Fun ($220.00)</option>
+									<option value="SafeToSpend">Safe-To-Spend</option>
+									<option value="Bills">Bills ($220.00)</option>
+									<option value="Groceries">Groceries ($220.00)</option>
+									<option value="Fun">Fun ($2200.00)</option>
+								</select>
+							</section>
+							<section>
+								<label for="transactionNotes">Transaction Notes:</label>
+								<input type="text" id="transactionNotes" placeholder="write notes here!">	
+								
+								<label for="creditcard">Enter price:</label> <input inputmode="numeric" pattern="[0-9]*" type="text" name="creditcard">
+			
+							</section>
+
+
+							<input type="submit" value="Save and Close" id="saveAndSubmit">
+							<input type="button" value="Close" id="close">
+
+					  </form>
+					</div>
+
+			</div>		   
+		</div>
+		<!--END: EDIT EXPENSE COMPONENT-->		
+
 	</div>
 
 	<footer>

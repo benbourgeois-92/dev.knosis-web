@@ -59,6 +59,7 @@ $(document).ready(function(){
     });
 
  
+
     //Flickity Listview Elements
     $('.listElement-carousel').flickity({
       cellAlign: 'left',
@@ -67,8 +68,10 @@ $(document).ready(function(){
       pageDots: false
     });
 
-    var grid = new Muuri('.grid', {
-      items: '.item',
-      dragEnabled: false
-    });
+    //Muuri Grid Controls
+    // var grid = new Muuri('.grid', {
+    //   items: '.item',
+    //   dragEnabled: true
+    // });
+    
   });
