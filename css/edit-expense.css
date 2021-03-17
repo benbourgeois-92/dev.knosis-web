@@ -8,10 +8,11 @@
 
     width: 100%;
     max-width: 420px;
-    min-height: 812px;
-    background-color: #fafafa;
+    min-height: 50px;
+    background-color: #fff;
     color: #313d46;
     font-family: 'Sen', sans-serif !important;
+    
 }
 .editExpenseComponent .activitySummary {
     border-bottom: 1px solid #e0e0e0;

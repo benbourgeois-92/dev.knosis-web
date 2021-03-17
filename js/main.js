@@ -73,5 +73,7 @@ $(document).ready(function(){
     //   items: '.item',
     //   dragEnabled: true
     // });
+
+ 
     
   });
