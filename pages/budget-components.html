@@ -702,53 +702,109 @@
 						</div>
 					</div>
 					<div class="editExpenseDetails">
-						<p>March 9, 4:33pm</p>
-						<h2>Transaction Title</h2>
-						<p class="transactionValue">$10.69</p>
 						<form>
 							<section>
-								<label for="transactionTypes">Edit Transaction Type:</label>
-								<select style="background-color: #fafafa; color: #313d46;" id="transactionTypes">
-									<option value="Money Transfers">Money Transfers</option>
-									<option value="Other Income">Other Income</option>
-									<option value="Custom Option">Custom Option</option>
-									<option value="Income">Income</option>
-								</select>								
-							</section>
+								<button class="detailsStacked">
+									<div class="icon bank">
 
-							
+									</div>
+									<div>
+										<p>Amount</p> 
+										<p>$16.00</p>
+									</div>
+								</button>
+								<button class="detailsStacked">
+									<div class="icon calendar">
 
+									</div>
+									<div>
+										<p>Due Date</p> 
+										<p>the 5th of every month</p>
+									</div>
+								</button>
+								<button class="detailsStacked">
+									<div class="icon arrowRight">
 
-							<section>
-								<label for="spendFrom">Spend From:</label>
-								<select style="background-color: #fafafa; color: #313d46;" id="spendFrom">								
-									<option value="SafeToSpend">Safe-To-Spend</option>
-									<option value="Bills">Bills ($220.00)</option>
-									<option value="Groceries">Groceries ($220.00)</option>
-									<option value="Fun">Fun ($220.00)</option>
-									<option value="SafeToSpend">Safe-To-Spend</option>
-									<option value="Bills">Bills ($220.00)</option>
-									<option value="Groceries">Groceries ($3220.00)</option>
-									<option value="Fun">Fun ($220.00)</option>
-									<option value="SafeToSpend">Safe-To-Spend</option>
-									<option value="Bills">Bills ($220.00)</option>
-									<option value="Groceries">Groceries ($220.00)</option>
-									<option value="Fun">Fun ($2200.00)</option>
-								</select>
-							</section>
-							<section>
-								<label for="transactionNotes">Transaction Notes:</label>
-								<input type="text" id="transactionNotes" placeholder="write notes here!">	
+									</div>
+									<div>
+										<p>Money In</p> 
+										<p>Payday</p>
+									</div>
+								</button>
+
 								
-								<label for="currency-field">Enter Amount</label>
-								<input type="text" data-type="currency" name="currency-field" id="currency-field" pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$">		
+								<button class="detailsStacked">
+									<div class="icon target">
+
+									</div>
+									<div>
+										<p>Contribution Option</p> 
+										<p>Set aside target amount</p>
+									</div>
+								</button>
+
+								<button class="detailsStacked">
+									<div class="icon arrowLeft">
+
+									</div>
+									<div>
+										<p>Money Out</p> 
+										<p>No automatic spending</p>
+									</div>
+								</button>							
+							</section>
+							<section class="recentTransactions">
+								<h2>Recent Transactions</h2>
+								<ul>
+									<li>
+										<div>
+											<p>Transaction Name</p>
+											<p>Feb 1</p>											
+										</div>
+										<div>
+											<p>$110.00</p>
+										</div>
+									</li>
+									<li>
+										<div>
+											<p>Transaction Name</p>
+											<p>Feb 1</p>											
+										</div>
+										<div>
+											<p>$110.00</p>
+										</div>
+									</li>
+									<li>
+										<div>
+											<p>Transaction Name</p>
+											<p>Feb 1</p>											
+										</div>
+										<div>
+											<p>$110.00</p>
+										</div>
+									</li>
+									<li>
+										<div>
+											<p>Transaction Name</p>
+											<p>Feb 1</p>											
+										</div>
+										<div>
+											<p>$110.00</p>
+										</div>
+									</li>
+									<li>
+										<div>
+											<p>Transaction Name Transaction Name</p>
+											<p>Feb 1</p>											
+										</div>
+										<div>
+											<p>$110.00</p>
+										</div>
+									</li>
+								</ul>
 							</section>
 
-
-							<input type="submit" value="Save and Close" id="saveAndSubmit">
-							<input type="button" value="Close" id="close">
-
-					  </form>
+						
 					</div>
 
 			</div>		   

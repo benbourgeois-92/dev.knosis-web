@@ -15,7 +15,10 @@
 }
 .editExpenseComponent .activitySummary {
     border-bottom: 1px solid #e0e0e0;
-    padding: 30px;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 15px;
 }
 
 .editExpenseComponent ul {
@@ -51,9 +54,8 @@
     list-style-type: none;
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
-    padding: 0;
-    margin: 0;
+    justify-content: center;
+
 }
 
 .editExpenseComponent .activitySummary .squareIcon.transfer {
@@ -196,21 +198,11 @@ p.noTransactions { width: 100%; text-align: center; position: absolute;  }
 }
 
 /*Edit Transaction Window*/
-.editExpenseComponent .editExpenseDetails {
-    padding: 30px;
-    background-color: #fafafa;
-    z-index: 2;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0px;
-}
+
 .editExpenseComponent .editExpenseDetails > h2, .editExpenseComponent .editExpenseDetails > p {
     text-align: center;
 } 
 
-.editExpenseComponent .editExpenseDetails form {
-    margin-top: 50px;
-}
 
 .editExpenseComponent .editExpenseDetails input, .editExpenseComponent .editExpenseDetails label {
     width: 100%;
@@ -220,16 +212,6 @@ p.noTransactions { width: 100%; text-align: center; position: absolute;  }
     -webkit-appearance: none;
     -webkit-border-radius: 0;
 }
-
-.editExpenseComponent .editExpenseDetails div {
-    display: flex;
-    margin-bottom: 15px;
-
-}
-.editExpenseComponent .editExpenseDetails section {
-    margin-bottom: 15px;
-}
-
 
 .editExpenseComponent .editExpenseDetails select {
     padding: 15px;
@@ -267,5 +249,99 @@ p.noTransactions { width: 100%; text-align: center; position: absolute;  }
 }
 
 /*END EDIT TRANSACTION DETAILS*/
+
+button.detailsStacked {
+    display: flex;
+    background-color: #fff;
+    color:#313d46;
+    width: 100%;
+    padding: 15px;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 1px solid #e0e0e0;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    
+}
+
+button.detailsStacked div.icon {
+    width: 50px;
+    height: 50px;
+    display: block;
+    border: 1px solid transparent;
+    background-size: 25px 25px !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    text-indent: -9999px;
+    margin-right: 15px;
+
+}
+button.detailsStacked div p {
+    margin: 0;
+    font-family: 'Sen', sans-serif !important;
+    text-align: left;
+
+}
+button.detailsStacked div p:first-child {
+    font-weight: bold;
+}
+button.detailsStacked div:last-child {
+    display: flex;
+    flex-direction: column;
+    padding-top: 9px;
+    padding-bottom: 9px;
+   
+}
+.editExpenseComponent .recentTransactions ul li {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1px solid #e0e0e0;
+    background-color: #fff;
+
+}
+.editExpenseComponent .recentTransactions ul li:first-child {
+    border-top: 1px solid #e0e0e0;
+
+}
+.editExpenseComponent .recentTransactions ul li div:last-child p {
+    color: #ef3f3a;
+    font-weight: bold;
+}
+.editExpenseComponent .recentTransactions ul li div:first-child p:first-child {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.editExpenseComponent .recentTransactions ul li div:first-child p {
+    margin: 0;
+}
+.editExpenseComponent .recentTransactions h2 {
+    text-align: center;
+
+}
+button.detailsStacked:hover {
+    cursor: pointer;
+}
+button.detailsStacked div.icon.bank {
+    background: url(../images/icons/university-solid.svg); 
+
+}
+button.detailsStacked div.icon.calendar {
+    background: url(../images/icons/calendar-alt-regular.svg); 
+
+}
+button.detailsStacked div.icon.target {
+    background: url(../images/icons/bullseye-solid.svg); 
+
+}
+button.detailsStacked div.icon.arrowRight {
+    background: url(../images/icons/arrow-right-solid.svg); 
+
+}
+button.detailsStacked div.icon.arrowLeft {
+    background: url(../images/icons/arrow-left-solid.svg); 
+
+}
 
 
