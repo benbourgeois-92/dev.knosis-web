@@ -148,18 +148,14 @@
 
 
   #navigationToggle {
-    width: 50px;
-    height: 50px;
     display: block;
-    background-image: url(../images/icons/iconfinder-menu.svg);
-    border: 1px solid transparent;
-    background-size: 40px 40px !important;
-    background-repeat: no-repeat !important;
-    background-position: center !important;
-    text-indent: -9999px;
+    font-size: 50px;
+    color: aquamarine;
+
   }
   #navigationToggle:hover {
       cursor: pointer;
+      opacity: 0.5;
   }
 
   .navigationComponent .sidenav div.btnRow button:hover {
@@ -176,5 +172,7 @@
     position: fixed;
     top: 0;
     z-index: 1;
+    padding-left: 30px;
+    padding-right: 30px;
 
   }
