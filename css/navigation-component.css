@@ -106,12 +106,12 @@
     padding: 0;
     display: flex;
 
+
   }
 
   .navigationComponent .sidenav div.btnRow ul li {
     width: 50%;
   }
-
   .navigationComponent .sidenav div.btnRow a {
 
     border-left: 1px solid #e0e0e0;
@@ -130,6 +130,12 @@
     box-sizing: border-box;
 
 }
+  .navigationComponent .sidenav div.btnRow a:hover {
+
+    cursor:pointer;
+}
+
+
 
 
   .navigationComponent .sidenav div.photoPlaceholder p {
