@@ -39,17 +39,25 @@
     background-color: #fafafa; 
     overflow-x: hidden; 
     transition: .8s; 
+    display: flex;
+    flex-direction: column;
   }
   
-  .navigationComponent .sidenav .userProfile {
+  .navigationComponent .sidenav  a {
     display: flex;
     background-color: #fff;    
     text-decoration: none;
     border-bottom: 1px solid #e0e0e0;
-    color: #313d46;
- 
+    color: #313d46; 
   }
-  .navigationComponent .sidenav .userProfile:hover {
+
+  .navigationComponent .sidenav a:not(.userProfile)  {
+
+    padding: 15px;
+
+  }
+
+  .navigationComponent .sidenav a:hover,.navigationComponent .sidenav a:focus {
     opacity: .5; 
   }
 
