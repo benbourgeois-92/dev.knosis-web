@@ -4,10 +4,9 @@
     margin-right: auto;
     margin-left: auto;
 
-
     width: 100%;
-    max-width: 420px;
-    min-height: 812px;
+    max-width: 100%;
+    min-height: 50px;
     background-color: #fafafa;
     color: #313d46;
     font-family: 'Sen', sans-serif !important;
@@ -174,5 +173,7 @@
     max-width: 100%;
     border-bottom: 1px solid #e0e0e0;
     background-color: #fff;
+    position: fixed;
+    top: 0;
 
   }
