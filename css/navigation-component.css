@@ -13,50 +13,74 @@
     font-family: 'Sen', sans-serif !important;
 
 }
-
-.navigationComponent nav {
-    width: 100%;
-    max-width: 300px;
+.navigationComponent .backgroundOverlay {
+  background: rgba(0,0,0,.4);
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  display: none;
 
 }
 
+
+
 /* The side navigation menu */
 .navigationComponent .sidenav {
-    height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
-    left: 0;
-    background-color: #fff; /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    height: 100%;
+    width: 300px; 
+    position: fixed; 
+    z-index: 2; 
+    top: 0; 
+    left: -9999px;
+    background-color: #fafafa; 
+    overflow-x: hidden; 
+    transition: .8s; 
   }
   
-  /* The navigation menu links */
-  .navigationComponent .sidenav a {
-    padding: 8px 8px 8px 32px;
+  .navigationComponent .sidenav .userProfile {
+    display: flex;
+    background-color: #fff;    
     text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
+    border-bottom: 1px solid #e0e0e0;
+    color: #313d46;
+ 
   }
-  
-  /* When you mouse over the navigation links, change their color */
-  .navigationComponent .sidenav a:hover {
-    color: #f1f1f1;
+  .navigationComponent .sidenav .userProfile:hover {
+    opacity: .5; 
   }
-  
-  /* Position and style the close button (top right corner) */
-  .navigationComponent .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
+
+  .navigationComponent .sidenav .userProfile .photoPlaceholder, .navigationComponent .sidenav .userProfile img  {
+    width: 50px;
+    height: 50px;
+    margin: 30px;
+    border-radius: 60px;
+    background-color: aquamarine;
+
   }
+  .navigationComponent .sidenav .userProfile div:last-child{
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .navigationComponent .sidenav .userProfile div:last-child p:first-child {
+    margin-bottom: 10px;
+    margin-top: 0px;
+    font-weight: bold;
+  }
+  .navigationComponent .sidenav .userProfile div:last-child p:last-child {
+    margin: 0px;
+  }
+  .navigationComponent .sidenav .userProfile .photoPlaceholder p {
+
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+
+  }
+
 
   #navigationToggle {
     width: 50px;

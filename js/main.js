@@ -74,6 +74,21 @@ $(document).ready(function(){
     //   dragEnabled: true
     // });
 
+
+    //Navigation Controls
+
+    $( "#navigationToggle" ).click(function() {
+      $(".backgroundOverlay").fadeToggle();
+      $("#mySidenav").css("left","0");
+
+
+    });
+
+    $( ".closeMenu" ).click(function() {
+      $(".backgroundOverlay").fadeToggle();
+      $("#mySidenav").css("left","-9999px");
+
+    });
  
     
   });
