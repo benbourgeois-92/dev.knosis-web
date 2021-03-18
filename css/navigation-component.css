@@ -57,6 +57,15 @@
 
   }
 
+  .navigationComponent .sidenav > div {
+    border-top: 1px solid #e0e0e0;
+    margin-bottom: 30px;
+  }
+
+  .navigationComponent .sidenav .userProfile {
+    margin-bottom: 30px;
+  }
+
   .navigationComponent .sidenav a:hover,.navigationComponent .sidenav a:focus {
     opacity: .5; 
   }
@@ -81,13 +90,29 @@
   .navigationComponent .sidenav .userProfile div:last-child p:last-child {
     margin: 0px;
   }
-  .navigationComponent .sidenav .userProfile .photoPlaceholder p {
 
-    text-align: center;
-    color: #fff;
-    font-weight: bold;
+  .navigationComponent .sidenav div.btnRow {
+
+    display: flex;
+    
 
   }
+  .navigationComponent .sidenav div.btnRow a {
+
+    width: 50%;
+    border-left: 1px solid #e0e0e0;
+    display: block;
+    text-align: center;
+
+  }
+  .navigationComponent .sidenav div.photoPlaceholder p {
+    line-height: 50px;
+    margin: 0;
+    text-align: center;
+    color: #fff;
+  
+  }
+
 
 
   #navigationToggle {
