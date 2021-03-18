@@ -78,14 +78,15 @@ $(document).ready(function(){
     //Navigation Controls
 
     $( "#navigationToggle" ).click(function() {
-      $(".backgroundOverlay").fadeToggle();
+
+      $(".backgroundOverlay").fadeIn();
       $("#mySidenav").css("left","0");
 
 
     });
-
     $( ".closeMenu" ).click(function() {
-      $(".backgroundOverlay").fadeToggle();
+
+      $(".backgroundOverlay").fadeOut();
       $("#mySidenav").css("left","-9999px");
 
     });
