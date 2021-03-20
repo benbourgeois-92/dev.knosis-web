@@ -13,6 +13,7 @@
 	<link rel="stylesheet" type="text/css" href="../css/activity-component.css">
 	<link rel="stylesheet" type="text/css" href="../css/edit-expense.css">
 	<link rel="stylesheet" type="text/css" href="../css/navigation-component.css">
+	<link rel="stylesheet" type="text/css" href="../css/popup-component.css">
 
 	<link rel="stylesheet" type="text/css" href="../css/footer.css">
 
@@ -156,6 +157,30 @@
 			</div>
 		</div>
 		<!--END: NAV COMPONENT-->
+
+		<!--BEGIN: POPUP COMPONENT-->
+		<div>
+			<div class="popupComponent">
+
+					<div class="popup">
+
+						<ul>
+							<li><button>Cancel</button></li>
+							<li><button>Cancel</button></li>
+							<li><button>Cancel</button></li>
+							<li><button class="closeMenu">Cancel</button></li>
+						</ul>
+						
+					</div>	
+
+
+				<div class='backgroundOverlay closeMenu'>
+
+				</div>
+
+			</div>
+		</div>
+		<!--END: POPUP COMPONENT-->
 
 	   <!--BEGIN: EXPENSES COMPONENT-->
 	   <div>
@@ -746,7 +771,7 @@
 		<div>
 							<div>
 								<ul>
-									<li><button class="squareIcon edit">Edit Expense Name</button></li>
+									<li><button class="squareIcon edit openPopupMenu">Edit Expense Name</button></li>
 									<li><button class="squareIcon delete">Delete Expense</button></li>
 									<li><button class="squareIcon transfer">Transfer Funds to Another Expense</button></li>
 

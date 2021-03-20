@@ -76,7 +76,6 @@ $(document).ready(function(){
 
 
     //Navigation Controls
-
     $( "#navigationToggle" ).click(function() {
 
       $(".backgroundOverlay").fadeIn();
@@ -84,10 +83,20 @@ $(document).ready(function(){
 
 
     });
+
+    $( ".openPopupMenu" ).click(function() {
+      $(".backgroundOverlay").fadeIn();
+      $(".popup").css("bottom","30px");
+
+
+    });
+
+
     $( ".closeMenu" ).click(function() {
 
       $(".backgroundOverlay").fadeOut();
       $("#mySidenav").css("left","-9999px");
+      $(".popup").css("bottom","-9999px");
 
     });
  
