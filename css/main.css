@@ -5,6 +5,10 @@ body {
     border: 0;
 
 }
+
+body.budgetBackground {
+	background-color: #fff;
+}
 html, body {
 	height: 100%;
 	font-weight: 16px;
