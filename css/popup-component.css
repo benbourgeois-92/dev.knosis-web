@@ -32,7 +32,7 @@
     z-index: 2;
     bottom: 30px;
     width: 100%;
-    max-width: 320px;
+    max-width: 60%;
     bottom: -9999px;
     overflow-x: hidden; 
     overflow-y: hidden;
@@ -58,8 +58,12 @@
     box-sizing: border-box;
     border-radius: 30px;
     padding: 15px;
-}
+    font-size: 1em;
 
+}
+.popupComponent .popup div input::placeholder {
+    font-size: 1em;
+}
 .popupComponent .popup ul {
     list-style-type: none;
     padding: 0;
