@@ -68,6 +68,16 @@ $(document).ready(function(){
       pageDots: false
     });
 
+
+    $('.bankSettingsSlider').flickity({
+      groupCells: false,
+      percenterPosition: false,
+      wrapAround: true,
+      prevNextButtons: true,
+      pageDots: true
+
+    });
+
     //Muuri Grid Controls
     // var grid = new Muuri('.grid', {
     //   items: '.item',
