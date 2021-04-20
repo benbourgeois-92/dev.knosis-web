@@ -150,6 +150,7 @@
 }
 .expensesComponent .individualExpense button > div:first-child h3, .expensesComponent .individualExpense button > div:first-child p {
     margin-top: 0;
+    font-size: .8em;
 }
 
 .expensesComponent .individualExpense button > div:first-child p:last-child {
