@@ -141,7 +141,6 @@
 
 .expensesComponent .individualExpense button > div:first-child {
     width: 80%;
-    padding-left: 15px;
 }
 .expensesComponent .individualExpense button > div:last-child {
     width: 20%;
