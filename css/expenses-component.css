@@ -157,6 +157,9 @@
 .expensesComponent .individualExpense button > div:first-child h3, .expensesComponent .individualExpense > div:first-child p:first-of-type + p {
     margin-bottom: 8px;
 }
+.expensesComponent .individualExpense button > div:first-child h3 {
+    font-size: 1em;
+}
 
 .expensesComponent .individualExpense .statusBar, 
 .expensesComponent .individualExpense .statusBar span {
