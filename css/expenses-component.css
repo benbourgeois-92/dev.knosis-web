@@ -121,8 +121,7 @@
     border: none;
     width: 100%;
     text-align: left;
-    padding-top: 15px;
-    padding-bottom: 15px; 
+    padding: 15px;
     font-family: 'Sen', sans-serif;
     font-size: 1em;
 }
@@ -146,11 +145,10 @@
 }
 .expensesComponent .individualExpense button > div:last-child {
     width: 20%;
-    padding-right: 15px;
 }
 .expensesComponent .individualExpense button > div:first-child h3, .expensesComponent .individualExpense button > div:first-child p {
     margin-top: 0;
-    font-size: .8em;
+    font-size: .85em;
 }
 
 .expensesComponent .individualExpense button > div:first-child p:last-child {
@@ -170,6 +168,7 @@
     display: flex;
     margin-top: 5px;
     width: 100%;
+    box-sizing: border-box;
 }
 .expensesComponent .individualExpense .statusBar span {
     display: block;
