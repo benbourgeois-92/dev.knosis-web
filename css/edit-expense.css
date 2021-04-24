@@ -282,7 +282,7 @@ button.detailsStacked div p {
     margin: 0;
     font-family: 'Sen', sans-serif !important;
     text-align: left;
-    font-size: 1em;
+    font-size: 15px;
 }
 button.detailsStacked div p:first-child {
     font-weight: bold;
