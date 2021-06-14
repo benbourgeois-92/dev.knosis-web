@@ -60,12 +60,13 @@ $(document).ready(function(){
 
  
 
-    //Flickity Listview Elements
+    // Flickity Listview Elements
     $('.listElement-carousel').flickity({
       cellAlign: 'left',
       contain: true,
       prevNextButtons: false,
-      pageDots: false
+      pageDots: false,
+      imagesLoaded: true
     });
 
 

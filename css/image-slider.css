@@ -10,4 +10,5 @@
 
 .imageSliderComponent .carousel-cell img {
     width: 100%;
+    min-height: fit-content;
 }
